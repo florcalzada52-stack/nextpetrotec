@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products | NexPetrotech</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      margin: 20px auto;
+      max-width: 900px;
+      padding: 0 15px;
+    }
+
+    h2 {
+      color: #005a9c;
+      border-bottom: 3px solid #005a9c;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    h3 {
+      color: #007acc;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      border-left: 5px solid #007acc;
+      padding-left: 10px;
+      background-color: #e6f0fb;
+    }
+
+    h4 {
+      color: #004b75;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    ul {
+      list-style: disc inside;
+      margin-bottom: 20px;
+      padding-left: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+      font-size: 0.95rem;
+    }
+
+    table thead {
+      background-color: #007acc;
+      color: white;
+    }
+
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    table tbody tr:nth-child(even) {
+      background-color: #f1f9ff;
+    }
+
+    /* Navbar */
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      background-color: #005a9c;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .navbar li {
+      margin: 0;
+    }
+
+    .navbar a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      background-color: #007acc;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Slider Styles */
+    .slider {
+      position: relative;
+      max-width: 100%;
+      margin: 20px 0 40px 0;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background-color: white;
+    }
+
+    .slides {
+      display: flex;
+      width: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slides img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+        margin: 0;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+      h4 {
+        font-size: 1rem;
+      }
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      table thead {
+        display: none;
+      }
+      table tr {
+        margin-bottom: 15px;
+      }
+      table td {
+        padding-left: 50%;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        text-align: right;
+      }
+      table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html" class="active">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="product-details">
+  <h2>Product Specifications</h2>
+
+  <!-- Cross Collars -->
+  <article>
+    <h3>Cross Collars</h3>
+    <p>
+      Our cross collars are engineered to meet rigorous field requirements and are available in the specifications listed below. Each collar is manufactured with precision and undergoes strict quality testing, including cable pull tests as well as both axial and radial pressure assessments to ensure optimal performance under demanding conditions.
+    </p>
+    <p>
+      We offer a range of standard sizes and coupling types, and we also accommodate custom requirements to suit your unique operational needs. All collars are surface treated to enhance durability and are available in molded stainless steel or alloy steel. Stainless steel collars are particularly suited for sour gas applications and harsh downhole environments, providing corrosion resistance and longevity. Whether you require standard designs or customized solutions, our collars deliver reliability and strength you can trust.
+    </p>
+
+    <!-- Slider for Cross Collars Images -->
+    <div class="slider" id="crossCollarsSlider">
+      <div class="slides">
+        <img src="images/cable_protector1.JPG" alt="Cable Protector 1" />
+        <img src="images/cable_protector2.JPG" alt="Cable Protector 2" />
+        <img src="images/cable_protector3.JPG" alt="Cable Protector 3" />
+        <img src="images/cable_protector4.JPG" alt="Cable Protector 4" />
+      </div>
+    </div>
+
+    <h4>Technical Specifications</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Pipe Size</th>
+          <th>Coupling Type</th>
+          <th>Cable Size</th>
+          <th>Control Line</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Pipe Size">2 3/8</td>
+          <td data-label="Coupling Type">EUE</td>
+          <td data-label="Cable Size">#1 FLAT</td>
+          <td data-label="Control Line">1/8 INCH</td>
+        </tr>
+        <tr>
+          <td data-label="Pipe Size">2 7/8</td>
+          <td data-label="Coupling Type">NUE</td>
+          <td data-label="Cable Size">#2 FLAT</td>
+          <td data-label="Control Line">1/4 INCH</td>
+        </tr>
+        <tr>
+          <td data-label="Pipe Size">3 1/2</td>
+          <td data-label="Coupling Type">FOX</td>
+          <td data-label="Cable Size"></td>
+          <td data-label="Control Line">3/8 INCH</td>
+        </tr>
+        <tr>
+          <td data-label="Pipe Size">4</td>
+          <td data-label="Coupling Type">NEW VAM</td>
+          <td data-label="Cable Size">#4 FLAT</td>
+          <td data-label="Control Line">11MM X 11MM</td>
+        </tr>
+        <tr>
+          <td data-label="Pipe Size">4 1/2</td>
+          <td data-label="Coupling Type">VAM TOP</td>
+          <td data-label="Cable Size">#1 ROUND</td>
+          <td data-label="Control Line"></td>
+        </tr>
+        <tr>
+          <td data-label="Pipe Size">5</td>
+          <td data-label="Coupling Type">NK3SB</td>
+          <td data-label="Cable Size">#2 ROUND</td>
+          <td data-label="Control Line"></td>
+        </tr>
+        <tr>
+          <td data-label="Pipe Size">5 1/2</td>
+          <td data-label="Coupling Type">BGT11</td>
+          <td data-label="Cable Size">#4 ROUND</td>
+          <td data-label="Control Line"></td>
+        </tr>
+        <tr>
+          <td data-label="Pipe Size">6</td>
+          <td data-label="Coupling Type"></td>
+          <td data-label="Cable Size"></td>
+          <td data-label="Control Line"></td>
+        </tr>
+        <tr>
+          <td data-label="Pipe Size">6 3/8</td>
+          <td data-label="Coupling Type"></td>
+          <td data-label="Cable Size"></td>
+          <td data-label="Control Line"></td>
+        </tr>
+        <tr>
+          <td data-label="Pipe Size">7</td>
+          <td data-label="Coupling Type"></td>
+          <td data-label="Cable Size"></td>
+          <td data-label="Control Line"></td>
+        </tr>
+        <tr>
+          <td data-label="Pipe Size">7 1/2</td>
+          <td data-label="Coupling Type"></td>
+          <td data-label="Cable Size"></td>
+          <td data-label="Control Line"></td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
+
+  <!-- Centralizers -->
+  <article>
+    <h3>Centralizer</h3>
+    <p><strong>Technical Details of Bow Spring Centralizers</strong></p>
+
+    <h4>Single Piece Bow Spring Centralizer</h4>
+    <p>
+      The single piece bow spring centralizer is engineered to offer robust performance in a wide range of well environments, including vertical, horizontal, and deviated wells. Manufactured from high-quality steel, these centralizers deliver exceptional reliability and mechanical strength, making them ideal for demanding wellbore conditions.
+    </p>
+    <ul>
+      <li>Constructed from a single piece for maximum durability and integrity</li>
+      <li>Bow springs provide consistent force for casing centralization</li>
+      <li>Designed for optimal standoff and restoring force</li>
+      <li>Precision manufacturing ensures uniform performance</li>
+      <li>Available for casing sizes ranging from 4 ½ inches to 14 inches</li>
+      <li>Rated to API 10D specifications, ensuring compliance with industry standards</li>
+      <li>High restoring force for effective centralization</li>
+      <li>Suitable for vertical, horizontal, and highly deviated wells</li>
+      <li>Excellent standoff for improved cementing</li>
+      <li>Superior reliability in harsh well conditions</li>
+      <li>Long service life due to robust single-piece construction</li>
+    </ul>
+
+    <h4>Welded Bow Spring Hinged Centralizer</h4>
+    <p>
+      The welded bow spring hinged centralizer is designed as an economical solution for less challenging well conditions. Its hinged construction allows for easy installation and flexibility while maintaining adequate restoring force for casing centralization.
+    </p>
+
+    <!-- Slider for Centralizer Images -->
+    <div class="slider" id="centralizerSlider">
+      <div class="slides">
+        <img src="images/hinged_centrailizer.png" alt="Hinged Centralizer" />
+        <img src="images/centralizer2.jpg" alt="Centralizer 2" />
+        <img src="images/centralizer3.jpg" alt="Centralizer 3" />
+      </div>
+    </div>
+
+    <h4>Technical Specifications</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Size Range (in)</th>
+          <th>Restoring Force (lbs)</th>
+          <th>Application</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Model">Single Piece</td>
+          <td data-label="Size Range">4 ½" to 14"</td>
+          <td data-label="Restoring Force">High</td>
+          <td data-label="Application">Vertical/Horizontal/Deviated</td>
+        </tr>
+        <tr>
+          <td data-label="Model">Welded Bow Spring Hinged</td>
+          <td data-label="Size Range">4 ½" to 12"</td>
+          <td data-label="Restoring Force">Moderate</td>
+          <td data-label="Application">Vertical Wells</td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
+
+  <!-- Stop Collars -->
+  <article>
+    <h3>Stop Collar</h3>
+    <p>
+      Our stop collars are designed to provide precise casing positioning and prevent unwanted movement during well construction and completion operations. Manufactured to meet stringent quality standards, our collars offer reliable locking and optimal durability in a variety of downhole environments.
+    </p>
+    <p>
+      Available in various sizes and materials, including carbon steel and stainless steel, our stop collars are suitable for use with a wide range of casing sizes and thread types. Whether you require standard models or custom solutions, our stop collars ensure secure and effective casing placement.
+    </p>
+
+    <h4>Features:</h4>
+    <ul>
+      <li>Robust locking mechanism for secure placement</li>
+      <li>Precision machining for tight tolerances</li>
+      <li>Corrosion-resistant coatings available</li>
+      <li>Compatible with most casing threads</li>
+      <li>Custom sizes available upon request</li>
+    </ul>
+
+    <h4>Technical Specifications</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Pipe Size</th>
+          <th>Material</th>
+          <th>Thread Type</th>
+          <th>Weight</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Pipe Size">2 3/8"</td>
+          <td data-label="Material">Carbon Steel</td>
+          <td data-label="Thread Type">EUE</td>
+          <td data-label="Weight">1.5 lbs</td>
+        </tr>
+        <tr>
+          <td data-label="Pipe Size">2 7/8"</td>
+          <td data-label="Material">Stainless Steel</td>
+          <td data-label="Thread Type">NUE</td>
+          <td data-label="Weight">2.0 lbs</td>
+        </tr>
+        <tr>
+          <td data-label="Pipe Size">3 1/2"</td>
+          <td data-label="Material">Carbon Steel</td>
+          <td data-label="Thread Type">FOX</td>
+          <td data-label="Weight">2.5 lbs</td>
+        </tr>
+        <tr>
+          <td data-label="Pipe Size">4"</td>
+          <td data-label="Material">Carbon Steel</td>
+          <td data-label="Thread Type">NEW VAM</td>
+          <td data-label="Weight">3.0 lbs</td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
+</section>
+
+<footer>
+  © 2025 NexPetrotech. All rights reserved.
+</footer>
+
+<script>
+  // Simple automatic slider for multiple sliders on the page
+  function createSlider(sliderId, interval = 3000) {
+    const slider = document.getElementById(sliderId);
+    if (!slider) return;
+
+    const slides = slider.querySelector('.slides');
+    const images = slides.querySelectorAll('img');
+    let index = 0;
+
+    function showNextSlide() {
+      index = (index + 1) % images.length;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    setInterval(showNextSlide, interval);
+  }
+
+  // Initialize sliders
+  window.onload = function() {
+    createSlider('crossCollarsSlider', 4000);
+    createSlider('centralizerSlider', 4000);
+  };
+</script>
+
+</body>
+</html>
