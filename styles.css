@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2a2f45;
+  padding: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+.navbar li:hover > a {
+  background-color: #3c425c;
+}
+
+.navbar li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #3c425c;
+  min-width: 200px;
+  z-index: 10;
+}
+
+.navbar li:hover ul {
+  display: block;
+}
+
+.navbar li ul li a {
+  padding: 10px 15px;
+}
+
+/* Hero with slider */
+.hero {
+  background-color: #1c1f2b;
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.hero .left-box {
+  background-color: #263143;
+  color: white;
+  padding: 30px;
+  max-width: 500px;
+  margin: 10px;
+  border-radius: 10px;
+  flex: 1 1 300px;
+}
+
+/* Slider container */
+.slider {
+  position: relative;
+  max-width: 600px;
+  flex: 1 1 300px;
+  margin: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  background-color: transparent;
+}
+
+/* Each slide */
+.slide {
+  display: none;
+  position: relative;
+  color: white;
+  padding: 40px 30px;
+  height: 350px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  animation: fade 1s ease-in-out;
+}
+
+/* Active slide */
+.slide.active {
+  display: block;
+}
+
+/* Dark overlay on slides */
+.slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(28,31,43,0.65);
+  border-radius: 12px;
+  z-index: 0;
+}
+
+/* Text on slides */
+.slide h3, .slide p {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+  color: white;
+}
+
+.slide h3 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.slide p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 90%;
+}
+
+/* Optional action button */
+.btn {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background-color: #ff7f50;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(255,127,80,0.4);
+  transition: background-color 0.3s ease;
+}
+
+/* Dots inside slider */
+.dots {
+  text-align: center;
+  padding: 15px 0 10px;
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+/* Estilo para las imágenes dentro de .image-card */
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  gap: 30px; /* espacio entre imágenes */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .images-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .images-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.image-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.images-section h2 {
+  text-align: center;
+}
+
+
+#products
+
+.product-details {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.product-details .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-details h2 {
+  font-size: 2.5rem;
+  color: #005a9c;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.product-details article {
+  margin-bottom: 60px;
+}
+
+.product-details h3 {
+  font-size: 1.8rem;
+  color: #007acc;
+  margin-bottom: 10px;
+  border-left: 5px solid #007acc;
+  padding-left: 15px;
+  background-color: #e6f0fb;
+}
+
+.product-details h4 {
+  font-size: 1.2rem;
+  margin-top: 25px;
+  color: #004b75;
+}
+
+.product-details ul {
+  margin-top: 10px;
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+.product-details p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Table Styling */
+.product-details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+.product-details thead {
+  background-color: #007acc;
+  color: #fff;
+}
+
+.product-details th, 
+.product-details td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.product-details tbody tr:nth-child(even) {
+  background-color: #f2f9ff;
+}
+
+/* Responsive tables */
+@media (max-width: 768px) {
+  .product-details table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  .product-details thead {
+    display: none;
+  }
+
+  .product-details td {
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .product-details td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
